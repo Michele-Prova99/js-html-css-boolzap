@@ -21,7 +21,6 @@ p {
   background-size: cover;
   align-items: center;
   justify-content: center;
-  overflow-x:
 }
 
 .container {
@@ -30,6 +29,11 @@ p {
   width: 80%;
   background-color: #eaeaea;
 }
+
+
+
+
+
 
 /* BLOCCO DI SINISTRA */
 
@@ -118,7 +122,7 @@ p {
   height: calc(100% - 260px);
   width: 100%;
   background-color: white;
-  overflow-y: auto;
+  overflow-y: scroll;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -129,6 +133,7 @@ p {
   justify-content: space-between;
   border: 1px solid #eaeaea;
   padding: 10px;
+  cursor: pointer;
 }
 
 .avatar-1 {
@@ -146,11 +151,29 @@ p {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* BLOCCO DI DESTRA */
 
 .destra {
   height: 100%;
   width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -201,8 +224,61 @@ p {
   background-image: url("https://i.redd.it/li4c8ljip3d41.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-y: auto
+  overflow-y: scroll;
+  flex-direction: column;
+}
 
+.row1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.white {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ora {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.green {
+  background-color: #d5f9bb;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat p {
+  color: black;
+}
+
+.chat span {
+  color: #b1ada9;
+  font-size: 12px;
 }
  /* MESSAGGIO */
 
